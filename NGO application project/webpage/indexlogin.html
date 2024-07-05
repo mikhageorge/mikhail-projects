@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script type="text/javascript">
+        function validate(event) {
+
+            event.preventDefault();
+
+
+            var Username = document.getElementById("Username");
+            var password = document.getElementById("pass");
+
+
+            if (Username.value == "" || password.value == "") {
+                alert("please don't leave any blank flieds");
+                return false;
+            }
+            else {
+
+                if (Username.value == "donor" & password.value == "1") {
+                    //alert("go to donor page");
+                    window.location.href = "donorhomepage.html";
+                }
+                else if (Username.value == "donorteacher" & password.value == "12") {
+                    window.location.href = "teachingPosts.html";
+                    //add the right path
+                }
+                else if (Username.value == "donordoctor" & password.value == "13") {
+                    window.location.href = "medicalCases.html";
+                    //add the right path
+                }
+                else if (Username.value == "organization" & password.value == "2") {
+                    window.location.href = "orghomepage.html";
+                }
+                else if (Username.value == "admin" & password.value == "3") {
+                    window.location.href = "homepage.html";
+                }
+                else {
+                    alert("the username or password is wrong !");
+                    return false;
+                }
+
+
+
+            }
+        }
+
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+
+    <img src="together.png" alt="Logo" class="logo">
+
+    <p class="tagline">Together</p>
+
+    <div class="infobox">
+        <form onsubmit="return validate(event)" action="indexregister.html">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input id="Username" type="text" placeholder="Username">
+                <i class='bx bxs-user'></i>
+
+            </div>
+            <div class="input-box">
+                <input id="pass" type="password" placeholder="Password">
+                <i class='bx bxs-lock-alt'></i>
+
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-Link">
+                <p>Don't have an account ? <a href="indexregister.html">Register</a>
+
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>

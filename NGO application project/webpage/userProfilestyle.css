@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  } */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/back3.jpg');
+    /* Replace 'background_image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+/*this part is for the user profile page and i also edited footer postion to be absolute and bottom=0 and width =100*/
+.main-container {
+    display: flex;
+    height: 800px;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.leftcontainer {
+    width: 40%;
+    margin-right: 0;
+}
+
+.leftcontainer {
+    position: relative;
+}
+
+.circular-frame {
+    width: 200px;
+    /* Adjust the size of the circular frame */
+    height: 200px;
+    /* Adjust the size of the circular frame */
+    border-radius: 50%;
+    /* Make it circular */
+    border: 2px solid #4783ec;
+    /* Border style */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    /* Adjust the margin to center it */
+}
+
+.username {
+    text-align: center;
+    /* Center the text */
+    margin-top: 10px;
+    /* Adjust the spacing between the frame and the text */
+    font-size: 30px;
+    color: #4783ec;
+
+}
+
+.circular-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    /* Make the image circular */
+}
+
+
+
+.vertical-line {
+    border-left: 1px solid #1ecd95;
+    height: 100%;
+    /* Match the height of the main container */
+    margin: 0 20px;
+    /* Adjust the margin as needed */
+}
+
+.rightcontainer {
+    width: 60%;
+}
+
+/* userProfilestyle.css */
+
+.rightcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.field {
+    flex-basis: calc(50% - 10px);
+    /* Two fields per row with some margin */
+    margin-bottom: 20px;
+}
+
+.label-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+
+.field input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    border-radius: 48px;
+    /* Apply border radius */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Add these styles to your CSS */
+
+.fields-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* Add some margin between the fields and the buttons */
+}
+
+.edit-button {
+    margin-top: 20px;
+    /* Add margin between the fields and the button */
+    width: 100px;
+}
+
+
+
+.field label {
+    color: #4783ec;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+.header {
+    font: Poppins;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4783ec;
+}
+
+.secondheader {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.donation-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rectangle {
+    width: 100%;
+    height: 100px;
+    /* Adjust height as needed */
+    background-color: #ccc;
+    /* Color of the rectangle */
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.photo {
+    width: 100px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.text {
+    flex-grow: 1;
+
+}
+
+.qty-text {
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.spacer {
+    height: 10px;
+
+}
+
+.black-line {
+    width: 100%;
+    height: 3px;
+    background-color: #1ecd95;
+    margin-bottom: 10px;
+
+}
+
+.radio-btn label:hover {
+    color: #4783ec;
+
+}
+
+.btn {
+    width: 300px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 48px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #4783ec;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background: #4783ec;
+    color: #fff;
+}
+
+/*this is the end of the code */
+
+
+.landing-page {
+    background-image: url('../images/donation.jpeg');
+    /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.bckgrnd {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.logout-button {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    text-decoration: none;
+    /* Remove underline */
+    color: red;
+    /* Button text color */
+    border: 1px solid red;
+    /* Button border */
+    padding: 8px 20px;
+    /* Button padding */
+    border-radius: 30px;
+    /* Button border radius */
+    background-color: #fff;
+    /* Button background color */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
+    font-weight: 600;
+
+}
+
+.logout-button:hover {
+    color: #ffffff;
+    background: red;
+    border-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.button {
+    text-decoration: none;
+    width: 50%;
+    height: 35px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #4783ec;
+    font-weight: 600;
+    margin-top: 100px;
+
+}
+
+.button:hover {
+    color: #ffffff;
+    background: #4783ec;
+    border-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+#navbar {
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 2px solid #1ecd95;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #1ecd95;
+    color: white;
+}
+
+#navbar img {
+    float: left;
+    height: 50px;
+    /* Adjust the height as needed */
+    margin-right: 0px;
+    /* Adjust the margin as needed */
+    margin-left: 20px;
+}
+
+#navbar #tog {
+    font-weight: bold;
+    color: #4783ec;
+
+}
+
+#navbar #tog:hover {
+    background-color: transparent;
+    /* Set to the same color as default */
+}
+
+#navbar #prof {
+    float: right;
+}
+
+
+/* Dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    background-color: inherit;
+    margin: 0;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    top: 100%;
+    /* Adjust the position to be below the dropdown button */
+    width: 100%;
+    /* Set the width to 100% to ensure items stack vertically */
+}
+
+
+
+
+
+
+
+
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background: #ffffff;
+    border-color: transparent;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dark-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hq-info,
+.contact-info,
+.additional-info {
+    flex: 1;
+}
+
+.hq-info p,
+.contact-info,
+.additional-info p {
+    color: #909090;
+    margin: 5px 0;
+    font-size: small;
+    font-weight: 100;
+}
+
+#email {
+    color: white;
+    transition: color 0.3s;
+}
+
+#email:hover {
+    color: #1ecd95;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

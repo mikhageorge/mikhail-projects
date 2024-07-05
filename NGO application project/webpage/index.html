@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="css/indexstyle.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <script>
+
+    function redirectToPage() {
+      window.location.href = "chooseregistertype.html";
+    }
+
+  </script>
+
+
+
+
+
+</head>
+
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="#" class="active">Home</a>
+    <a href="aboutgeneral.html">About</a>
+    <a href="#contact" class="smoothScroll">Contact</a>
+    <a id="prof" href="indexlogin.html">Login</a>
+  </div>
+
+  <div class="landing-page">
+    <div class="bckgrnd">
+      <div class="overlay">
+        <h1>We are stronger together!</h1>
+        <p>“Everyone can be great, because everyone can serve.” <br>
+          - Martin Luther King, Jr.</p>
+        <!-- <button href="chooseregistertype.html" class="button" id="redirectButton">Discover more</button> -->
+        <!-- <button class="button" id="redirectButton" onclick="redirectToPage('chooseregistertype.html')">Discover
+          more</button> -->
+        <!-- <button href="chooseregistertype.html" class="button">Discover more</button> -->
+        <button class="button" onclick="redirectToPage()">Discover more</button>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="dark-footer" id="contact">
+    <div class="container">
+      <div class="additional-info">
+        <h2>Know our founders</h2>
+        <p>Ahmed Mohamed</p>
+        <p>Marly Maged</p>
+        <p>Mikhail George</p>
+        <p>Moaaz Samir</p>
+        <p>Mohamed Tamer</p>
+        <p>Sandy George</p>
+      </div>
+      <div class="hq-info">
+        <h2>Headquarters</h2>
+        <p>C4, C Building, GUC</p>
+        <p>Cairo, Egypt</p>
+      </div>
+      <div class="contact-info">
+        <h2 style="color: white;">Contact Us</h2>
+        <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="js/indexscript.js"></script>
+
+</html>

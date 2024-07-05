@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothes Donations</title>
+  <link rel="stylesheet" href="css/schoolSupplies.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+    <a href="aboutdonor.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+          <a href="allservices.html">All services</a>
+          <a href="services.html">Categories</a>
+      </div>
+    </div>
+    <a href="organizations.html">Organizations</a>
+    <a href="#contact" class="smoothScroll">Contact</a>
+    <a href="enteriddelivery.html">Track your order</a>
+    <a id="prof"href="userprofile.html">My profile</a>
+</div>
+
+  <header>
+    <h1>Clothes Donations</h1>
+  </header>
+
+  <div class="filter-by">
+    <span class="filter-label">Filter:</span>
+    <div class="filter-option">
+      <span>Age:</span>
+      <select id="ageFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select age</option>
+        <option value="kids">Kids</option>
+        <option value="teens">Teens</option>
+        <option value="adults">Adults</option>
+      </select>
+    </div>
+    <div class="filter-option">
+      <span>Gender:</span>
+      <select id="genderFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="unisex">Unisex</option>
+      </select>
+    </div>
+    <div class="filter-option">
+      <span>Season:</span>
+      <select id="seasonFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select season</option>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="fall">Fall</option>
+        <option value="winter">Winter</option>
+      </select>
+    </div>
+    <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+  </div>
+  
+  
+  
+  <main>
+    <a href="donationselection.html" class="donation-link" age="adults" gender="unisex" season="winter">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Pijamas</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Local Community Center</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        
+      </section>
+    </a>
+    
+
+    <a href="donationselection.html" class="donation-link" age="teens" gender="female" season="spring">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Dresses</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+
+        <p class="item-organization">Homeless shelter</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        
+      </section>
+
+    </a>
+
+    <a href="donationselection.html" class="donation-link" age="teens" gender="male" season="spring">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Suits</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Local High School</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+      </section>
+    </a>
+  
+    <a href="donationselection.html" class="donation-link" age="kids" gender="unisex" season="winter">
+        <section class="donation-item">
+        
+        <div>
+          <h2 class="item-title">Jackets</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Disaster Relief Organization</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+      </section>
+    </a>
+  
+    <a href="donationselection.html" class="donation-link" age="kids" gender="female" season="summer">
+        <section class="donation-item">
+       
+        <div>
+          <h2 class="item-title">Tshirts</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Local Elementary School</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+      </section>
+    </a>
+  
+    <a href="donationselection.html" class="donation-link" age="adults" gender="male" season="fall">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Hiking pants</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Community Sports Center</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+    </a>
+  </main>
+  <script src="js\clothingItemsScript.js"></script>
+
+</body>
+</html>

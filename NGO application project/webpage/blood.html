@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donations</title>
+  <link rel="stylesheet" href="css/schoolSupplies.css">
+</head>
+
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+    <a href="aboutdonor.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+        <a href="allservices.html">All services</a>
+        <a href="services.html">Categories</a>
+      </div>
+    </div>
+    <a href="organizations.html">Organizations</a>
+    <a href="enteriddelivery.html">Track your order</a>
+    <a id="prof" href="userprofile.html">My profile</a>
+  </div>
+
+  <header>
+    <h1>Blood Donations</h1>
+  </header>
+  <div class="filter-by">
+    <span class="filter-label">Filter:</span>
+    <div class="filter-option">
+      <span>Hospital:</span>
+      <select id="hospitalFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select hospital</option>
+        <option value="Rofayda">Rofayda</option>
+        <option value="Salam">Salam</option>
+        <option value="Kasr el-ainy">Kasr el-ainy</option>
+      </select>
+    </div>
+    <div class="filter-option">
+      <span>Governorate:</span>
+      <select id="governorateFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select governorate</option>
+        <option value="6th of october">6th of october</option>
+        <option value="Mohandseen">Mohandseen</option>
+      </select>
+    </div>
+    <div class="filter-option">
+      <span>Area:</span>
+      <select id="areaFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select Area</option>
+        <option value="Zayed">Zayed</option>
+        <option value="Dokki">Dokki</option>
+      </select>
+    </div>
+    <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+  </div>
+
+
+
+  <main>
+    <a href="hospitalDetails.html" class="donation-link" hospital="rofayda" governorate="6th of october" area="Zayed">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">A-</h2>
+          <p class="patient">Marly Maged</p>
+        </div>
+        <p class="item-organization">Local hospital </p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+      </section>
+    </a>
+
+    <a href="hospitalDetails.html" class="donation-link" hospital="Salam" governorate="Mohandseen" area="Dokki">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">O</h2>
+        </div>
+        <p class="patient">Sandy George</p>
+        <p class="item-organization">Blood Donation Center</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+      </section>
+    </a>
+
+  </main>
+  <script src="js\bloodScript.js"></script>
+
+</body>
+
+</html>

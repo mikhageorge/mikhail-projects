@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching opportunities</title>
+  <link rel="stylesheet" href="css/schoolSupplies.css">
+</head>
+
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+  </div>
+
+  <header>
+    <h1>Teaching opportunities</h1>
+  </header>
+
+  <div class="filter-by">
+    <span class="filter-label">Filter:</span>
+    <div class="filter-option">
+      <select id="subjectFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select subject</option>
+        <option value="Arabic">Arabic</option>
+        <option value="English">English</option>
+        <option value="Maths">Maths</option>
+        <option value="Maths">Maths</option>
+
+      </select>
+    </div>
+    <div class="filter-option">
+      <select id="governorateFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select governorate</option>
+        <option value="Giza">Giza</option>
+        <option value="Cairo">Cairo</option>
+      </select>
+    </div>
+    <div class="filter-option">
+      <select id="areaFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select Area</option>
+        <option value="6th of October">6th of October</option>
+        <option value="Heliopolis">Heliopolis</option>
+        <option value="Zayed">Zayed</option>
+        <option value="Abaasiya">Abaasiya</option>
+      </select>
+    </div>
+    <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+  </div>
+
+
+
+  <main>
+    <a href="teachingDetails.html" class="donation-link" subject="English" area="6th of October" governorate="Giza">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">English teacher</h2>
+        </div>
+        <p class="item-organization">Local Community Center</p>
+        <p class="item-about"> English teacher needed for a school based in Heliopolis, Cairo. Number of students in a
+          class is around 50.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </section>
+    </a>
+
+
+    <a href="teachingDetails.html" class="donation-link" subject="Maths" area="Heliopolis" governorate="Cairo">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Maths teacher</h2>
+        </div>
+        <p class="item-organization"> Orphanage </p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+    </a>
+
+    <a href="teachingDetails.html" class="donation-link" subject="Arabic" area="Zayed" governorate="Giza">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Arabic teacher</h2>
+        </div>
+        <p class="item-organization"> Public school </p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+    </a>
+
+    <a href="teachingDetails.html" class="donation-link" subject="Science" area="Abaasiya" governorate="Cairo">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Science teacher</h2>
+        </div>
+        <p class="item-organization"> Special needs school </p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+    </a>
+  </main>
+
+
+  <!-- <footer class="dark-footer" id="contact" >
+     
+      <div class="container">
+        <div class="additional-info">
+          <h2>Know our founders</h2>
+          <p>Ahmed Mohamed</p>
+          <p>Marly Maged</p>
+          <p>Mikhail George</p>
+          <p>Moaaz Samir</p>
+          <p>Mohamed Tamer</p>
+          <p>Sandy George</p>
+      </div>
+          <div class="hq-info">
+              <h2>Headquarters</h2>
+              <p>C4, C Building, GUC</p>
+              <p>Cairo, Egypt</p>
+          </div>
+          <div class="contact-info">
+              <h2 style="color: white;">Contact Us</h2>
+              <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+              <p>Phone: 123-456-7890</p>
+          </div>
+      </div>
+      <p>&copy;2024 Donation App</p>
+  </footer> -->
+
+  <script src="js\teachingPosts.js"></script>
+
+</body>
+
+</html>

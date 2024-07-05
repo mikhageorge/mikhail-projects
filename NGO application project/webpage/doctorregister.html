@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>second step in doctor Registration page</title>
+    <link rel="stylesheet" href="doctoregisterstyle.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 0, lng: 0 },
+                zoom: 8 // Adjust the initial zoom level as needed
+            });
+        }
+
+        function validate(event) {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            const fileInput = document.getElementById('document');
+            let fileUploaded = false;
+
+            // Check if any input field is empty
+            for (const input of inputs) {
+                if (input.value.trim() === '') {
+                    alert('Please fill in all fields');
+                    return false;
+                }
+            }
+
+            // Check if a file has been uploaded
+            if (fileInput.files.length > 0) {
+                fileUploaded = true;
+            }
+
+            if (!fileUploaded) {
+                alert('Please upload a document');
+                return false;
+            }
+
+            return true;
+        }
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="infobox">
+        <h1 class="form-title">Just one more step..</h1>
+
+        <form onsubmit="return validate(event)" action="successpage.html">
+            <div class="user-input-upload">
+                <label for="document">Please upload documents so that we can verify your qualifications.</label>
+                <input type="file" id="document" name="document" />
+            </div>
+            <div class="input-box">
+                <label for="specialization">Specialization</label>
+                <input type="text" id="specialization" name="specialization" placeholder="Enter your Specialization" />
+            </div>
+            <div class="input-box">
+                <label for="specialization">Please write how many pro-bono cases can you take </label>
+                <p>for example : 2 cases per month</p>
+                <input type="text" id="specialization" name="specialization"
+                    placeholder="Enter info like the example" />
+            </div>
+            <hr>
+            <h2 class="clinic-heading">Clinic Information</h2>
+            <div class="container">
+                <div class="input-container">
+                    <div class="input-box">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Enter Address of Clinic" />
+                    </div>
+                    <div class="input-box">
+                        <label for="area">Area</label>
+                        <input type="text" id="area" name="area" placeholder="Enter Area of Clinic" />
+                    </div>
+                    <div class="input-box">
+                        <label for="governorate">Governorate</label>
+                        <input type="text" id="governorate" name="governorate"
+                            placeholder="Enter Governorate of clinic" />
+                    </div>
+                </div>
+                <div id="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13809.421850331562!2d31.322402385903892!3d30.084004509949263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f261be43ebd%3A0x2239e389239274de!2sYours%20Dental%20Clinic!5e0!3m2!1sen!2seg!4v1714872062177!5m2!1sen!2seg"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>

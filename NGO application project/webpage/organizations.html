@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Organizations</title>
+  <link rel="stylesheet" href="css/organizationsstyle.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+    <a href="aboutdonor.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+        <a href="allservices.html">All services</a>
+        <a href="services.html">Categories</a>
+      </div>
+    </div>
+    <a href="organizations.html" class="active">Organizations</a>
+    <a href="enteriddelivery.html" class="smoothScroll">Track your order</a>
+    <a id="prof" href="userprofile.html">My profile</a>
+  </div>
+
+  <div class="main">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for organizations..">
+    <!-- <div class="filter-by">
+  <span class="filter-label">Filter by:</span>
+  <button class="filter-option" onclick="filterByArea()">Area</button>
+  <button class="filter-option" onclick="filterByOrganizationType()">Organization Type</button>
+  <button class="filter-option" onclick="filterByGovernorate()">Governorate</button>
+</div> -->
+
+    <div class="filter-by">
+      <span class="filter-label">Filter:</span>
+      <div class="filter-option">
+        <select id="areaFilter" onchange="filterOrganizations()">
+          <option value="" class="sel">Select Area</option>
+          <option value="El Basatin">El Basatin</option>
+          <option value="El Sayeda Zeynab">El Sayeda Zeynab </option>
+          <option value="El Hadayek">El Hadayek </option>
+          <option value="Al Obour">Al Obour</option>
+          <option value="6th October">6th October </option>
+          <option value="Dahshour">Dahshour </option>
+
+        </select>
+      </div>
+      <div class="filter-option">
+        <select id="typeFilter" onchange="filterOrganizations()">
+          <option value="" class="sel">Select Organization Type</option>
+          <option value="Medical">Medical</option>
+          <option value="Orphanage">Orphanage</option>
+          <option value="Education">Education</option>
+        </select>
+      </div>
+      <div class="filter-option">
+        <select id="governorateFilter" onchange="filterOrganizations()">
+          <option value="" class="sel">Select Governorate</option>
+          <option value="Cairo">Cairo</option>
+          <option value="Giza">Giza</option>
+          <option value="Assuit">Assuit</option>
+        </select>
+      </div>
+      <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+    </div>
+
+
+
+    <div class="card-container">
+
+      <ul id="myUL">
+        <a href="medorgdescription.html" class="card-link">
+          <div class="enlarge card" data-area="El Basatin" data-type="Medical" data-governorate="Cairo">
+            <div class="card-header">
+              <h2 class="color">
+                <li>Mersal Foundation </li>
+              </h2>
+            </div>
+            <p>Mersal Foundation provides the needed medical supplies (wheelchairs, medications, hosptal beds,...) to
+              people in need free of charge. This is an organization description that accurately describes what this
+              organization does. This organization
+              has accomplished a lot for the community.</p>
+          </div>
+        </a>
+        <a href="medorgdescription.html" class="card-link">
+          <div class="enlarge card" data-area="El Sayeda Zeynab" data-type="Medical" data-governorate="Cairo">
+            <div class="card-header">
+              <h2 class="color">
+                <li>57357 Hospital </li>
+              </h2>
+            </div>
+            <p>57357 Hospital is one of the largest pediatric oncology hospitals in Egypt. This is an organization
+              description that accurately describes what this organization does. This organization
+              has accomplished a lot for the community.</p>
+          </div>
+        </a>
+        <a href="medorgdescription.html" class="card-link">
+          <div class="enlarge card" data-area="El Hadayek" data-type="Medical" data-governorate="Assuit">
+            <div class="card-header">
+              <h2 class="color">
+                <li>Dar Al Shifaa Hospital</li>
+              </h2>
+            </div>
+            <p>Dar Al Shifaa Hospital has numerous doctors in various specialties that decicate some of their time and
+              effort to providing probono medical care.This is an organization description that accurately describes
+              what this organization does. This organization
+              has accomplished a lot for the community.
+            </p>
+          </div>
+        </a>
+        <a href="orphanageorgdescription.html" class="card-link">
+          <div class="enlarge card" data-area="Al Obour" data-type="Orphanage" data-governorate="Cairo">
+            <div class="card-header">
+              <h2 class="color">
+                <li>The Littlest Lamb Orphanage </li>
+              </h2>
+            </div>
+            <p>The Littlest Lamb Orphanage is a safe haven for unhoused children providing them with education, love and
+              care.
+              It is a refreshing view on orphanages.This is an organization description that accurately describes what
+              this organization does. This organization
+              has accomplished a lot for the community.
+            </p>
+          </div>
+        </a>
+        <a href="medorgdescription.html" class="card-link">
+          <div class="enlarge card" data-area="6th October" data-type="Medical" data-governorate="Giza">
+            <div class="card-header">
+              <div class="card-header">
+                <h2 class="color">
+                  <li>Blood Bank </li>
+                </h2>
+              </div>
+            </div>
+            <p>Blood Bank provides the needed blood types for patients in critical conditions. Over 10000 people
+              have been able to carry out their normal activities due to recieved blood.This is an organization
+              description that accurately describes what this organization does. This organization
+              has accomplished a lot for the community.
+            </p>
+          </div>
+        </a>
+        <a href="eduorgdescription.html" class="card-link">
+          <div class="enlarge card" data-area="Dahshour" data-type="Education" data-governorate="Giza">
+            <div class="card-header">
+              <h2 class="color">
+                <li>Al Thakafa Foundation</li>
+              </h2>
+            </div>
+            <p>
+              Al Thakafa Foundation foucuses on educating children in underprivileged communities in an
+              effort to eradicate illiteracy in Egypt by 2030.This is an organization description that accurately
+              describes what this organization does. This organization
+              has accomplished a lot for the community. </p>
+          </div>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <footer class="dark-footer" id="contact">
+    <div class="container">
+      <div class="additional-info">
+        <h2>Know our founders</h2>
+        <p>Ahmed Mohamed</p>
+        <p>Marly Maged</p>
+        <p>Mikhail George</p>
+        <p>Moaaz Samir</p>
+        <p>Mohamed Tamer</p>
+        <p>Sandy George</p>
+      </div>
+      <div class="hq-info">
+        <h2>Headquarters</h2>
+        <p>C4, C Building, GUC</p>
+        <p>Cairo, Egypt</p>
+      </div>
+      <div class="contact-info">
+        <h2 style="color: white;">Contact Us</h2>
+        <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+    </div> -->
+  <!-- </footer> -->
+
+  <script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, div, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      div = ul.getElementsByClassName('enlarge card');
+
+      // Loop through all div elements with class 'enlarge card' and hide those that don't match the search query
+      for (i = 0; i < div.length; i++) {
+        txtValue = div[i].textContent || div[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          div[i].style.display = "";
+        } else {
+          div[i].style.display = "none";
+        }
+      }
+    }
+
+    function filterOrganizations() {
+      var area = document.getElementById("areaFilter").value;
+      var type = document.getElementById("typeFilter").value;
+      var governorate = document.getElementById("governorateFilter").value;
+
+      var organizations = document.querySelectorAll(".card-container .card");
+
+      organizations.forEach(function (org) {
+        var orgArea = org.getAttribute("data-area");
+        var orgType = org.getAttribute("data-type");
+        var orgGovernorate = org.getAttribute("data-governorate");
+
+        var areaMatch = (area === "" || orgArea === area);
+        var typeMatch = (type === "" || orgType === type);
+        var governorateMatch = (governorate === "" || orgGovernorate === governorate);
+
+        if (areaMatch && typeMatch && governorateMatch) {
+          org.style.display = "block";
+        } else {
+          org.style.display = "none";
+        }
+      });
+    }
+
+    function removeFilters() {
+      // Clear the selected options in all dropdown menus
+      document.getElementById("areaFilter").value = "";
+      document.getElementById("typeFilter").value = "";
+      document.getElementById("governorateFilter").value = "";
+
+      // Trigger the filtering function to update the organization list
+      filterOrganizations();
+    }
+
+  </script>
+</body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</html>

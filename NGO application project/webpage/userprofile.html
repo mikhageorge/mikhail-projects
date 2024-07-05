@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="userProfilestyle.css">
+    <title>User Profile</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="images/together.png" alt="Logo">
+        <a id="tog">TOGETHER</a>
+        <a href="donorhomepage.html">Home</a>
+        <a href="aboutdonor.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="allservices.html">All services</a>
+                <a href="services.html">Categories</a>
+            </div>
+        </div>
+        <a href="organizations.html">Organizations</a>
+        <a href="enteriddelivery.html">Track your order</a>
+        <a id="prof" class="active" href="#">My profile</a>
+    </div>
+
+    <div class="main-container">
+        <div class="leftcontainer">
+            <div class="header">User profile</div>
+            <div class="circular-frame">
+                <img src="loginpage.jpg" alt="Profile Picture">
+            </div>
+            <div class="username">Donor123</div>
+            <a href="indexlogin.html" class="logout-button">Log Out</a>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="rightcontainer">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="fields-container">
+                <div class="field">
+                    <label for="firstname">First name:</label><br>
+                    <input type="text" id="firstname" value="Mikhail" readonly>
+                </div>
+                <div class="field">
+                    <label for="Lastname">Last name:</label><br>
+                    <input type="text" id="Lastname" value="george" readonly>
+                </div>
+                <div class="field">
+                    <label for="gender">Gender:</label><br>
+                    <input type="text" id="gender" value="Male" readonly>
+                </div>
+                <div class="field">
+                    <label for="contactnumber">Contact number:</label><br>
+                    <input type="text" id="contactnumber" value="01023748494" readonly>
+                </div>
+                <div class="field">
+                    <label for="emailfeild">Email:</label><br>
+                    <input type="text" id="emailfeild" value="donor1@gmail.com" readonly>
+                </div>
+                <div class="field">
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" value="pass1" readonly>
+                </div>
+                <div class="field">
+                    <label for="area">Area:</label><br>
+                    <input type="text" id="area" value="GUC area" readonly>
+                </div>
+                <div class="field">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" value="GUC address" readonly>
+                </div>
+                <div class="field">
+                    <label for="governate">Governorate:</label><br>
+                    <input type="text" id="governate" value="Cairo" readonly>
+                </div>
+            </div>
+            <button class="button edit-button" onclick="editProfile()">Edit Profile</button>
+            <button class="button" id="saveButton" style="display: none;" onclick="saveChanges()">Save Changes</button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- <footer class="dark-footer" id="contact">
+        <div class="container">
+            <div class="additional-info">
+                <h2>Know our founders</h2>
+                <p>Ahmed Mohamed</p>
+                <p>Marly Maged</p>
+                <p>Mikhail George</p>
+                <p>Moaaz Samir</p>
+                <p>Mohamed Tamer</p>
+                <p>Sandy George</p>
+            </div>
+            <div class="hq-info">
+                <h2>Headquarters</h2>
+                <p>C4, C Building, GUC</p>
+                <p>Cairo, Egypt</p>
+            </div>
+            <div class="contact-info">
+                <h2 style="color: white;">Contact Us</h2>
+                <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </div>
+    </footer> -->
+
+
+
+</body>
+
+
+
+<script>
+    function editProfile() {
+        document.getElementById('firstname').removeAttribute('readonly');
+        document.getElementById('Lastname').removeAttribute('readonly');
+        document.getElementById('contactnumber').removeAttribute('readonly');
+        document.getElementById('emailfeild').removeAttribute('readonly');
+        document.getElementById('password').removeAttribute('readonly');
+        document.getElementById('area').removeAttribute('readonly');
+        document.getElementById('governate').removeAttribute('readonly');
+        document.getElementById('address').removeAttribute('readonly');
+        document.getElementById('saveButton').style.display = 'block';
+        document.querySelector('.button').style.display = 'none';
+    }
+
+    // function editProfile() {
+    //     // Select all input fields
+    //     var fields = document.querySelectorAll('.fields-container input');
+
+    //     // Loop through each input field
+    //     fields.forEach(function (field) {
+    //         // Check if the field is the gender field
+    //         if (field.id !== 'gender') {
+    //             // If it's not the gender field, remove the readonly attribute
+    //             field.removeAttribute('readonly');
+    //         }
+    //     });
+
+    //     // Show the save button and hide the edit button
+    //     document.getElementById('saveButton').style.display = 'block';
+    //     document.querySelector('.button').style.display = 'none';
+    // }
+
+
+
+
+
+
+
+
+    function saveChanges() {
+        var firstname = document.getElementById('firstname').value;
+        var lastname = document.getElementById('Lastname').value;
+        var contactnumber = document.getElementById('contactnumber').value;
+        var email = document.getElementById('emailfeild').value;
+        var password = document.getElementById('password').value;
+        var area = document.getElementById('area').value;
+        var governate = document.getElementById('governate').value;
+        var address = document.getElementById('address').value;
+
+        if (firstname.trim() === '' || lastname.trim() === '' || contactnumber.trim() === '' || email.trim() === '' || password.trim() === '') {
+            alert('you are only allowed to delete the area, address and governorate');
+            return; // Exit the function early if any required field is empty
+        }
+
+
+        // Set fields back to readonly after saving changes
+        document.getElementById('firstname').setAttribute('readonly', 'true');
+        document.getElementById('Lastname').setAttribute('readonly', 'true');
+        document.getElementById('contactnumber').setAttribute('readonly', 'true');
+        document.getElementById('emailfeild').setAttribute('readonly', 'true');
+        document.getElementById('password').setAttribute('readonly', 'true');
+        document.getElementById('area').setAttribute('readonly', 'true');
+        document.getElementById('governate').setAttribute('readonly', 'true');
+        document.getElementById('address').setAttribute('readonly', 'true');
+        document.querySelector('.button').style.display = 'block';
+        document.getElementById('saveButton').style.display = 'none';
+        alert("changes have been saved ");
+
+    }
+</script>

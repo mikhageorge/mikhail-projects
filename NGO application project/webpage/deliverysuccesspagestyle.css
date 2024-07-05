@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('wallpaperdeliver.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1ecd95;
+}
+
+.message {
+    color: white;
+    /* Set text color to white */
+}
+
+.message #delivery-id {
+    font-weight: bold;
+    /* Make the delivery ID bold */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.delivery-id {
+    font-weight: bold;
+    color: #ff0000;
+    /* Choose your desired color for the delivery ID */
+}
+
+.infobox {
+    width: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #4783ec;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.infobox h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #1ecd95;
+}
+
+
+.infobox .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 48px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #1ecd95;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.infobox .btn:hover {
+    background: #1ecd95;
+    color: #fff;
+}
+
+
+.infobox .register-Link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-Link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-Link p a:hover {
+    text-decoration: underline;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 48px;
+    color: #1ecd95;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.form-submit-btn input:hover {
+    background: #1ecd95;
+    color: white;
+}

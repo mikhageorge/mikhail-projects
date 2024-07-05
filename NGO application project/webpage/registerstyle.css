@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('registerpage.jpg');
+    background-size: cover;
+
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px 40px;
+    margin: 0 28px;
+    border-radius: 10px;
+    /*box-shadow: inset -2px 2px 2px white;*/
+
+
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    /*padding-bottom: 6px;*/
+    color: #4783ec;
+    /*text-shadow: 2px 2px 2px black;*/
+    /*border-bottom: solid 1px white;*/
+
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label {
+    width: 95%;
+    color: #4783ec;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 48px;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid #4783ec;
+    padding: 20px 45px 20px 20px;
+    color: #4783ec;
+}
+
+.user-input-box input::placeholder {
+    color: #4783ec;
+}
+
+.gender-title {
+    color: #4783ec;
+    font-size: 24px;
+    font-weight: 400;
+    /*border-bottom: 1px solid white;*/
+}
+
+.gender-category {
+    margin: 10px;
+    color: white;
+}
+
+.gender-category label {
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label:hover {
+    text-decoration: underline;
+}
+
+
+.donor-title {
+    color: #4783ec;
+    font-size: 24px;
+    font-weight: 400;
+    /*border-bottom: 1px solid white;*/
+}
+
+.donor-description {
+    font-size: 16px;
+    color: #4783ec;
+    /* Adjust color as needed */
+    /* Adjust margin as needed */
+}
+
+
+
+.donor-category {
+    margin: 10px;
+    color: white;
+}
+
+.donor-category label {
+    padding: 0 20px 0 5px;
+}
+
+.donor-category label:hover {
+    text-decoration: underline;
+}
+
+
+.donor-category label,
+.donor-category input,
+.gender-category label,
+.gender-category input,
+.form-submit-btn input {
+    cursor: pointer;
+}
+
+.form-submit-btn {
+    margin-top: 40px;
+    border-radius: 48px;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 48px;
+    color: #4783ec;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.user-input-box input[type="text"]:focus {
+    background-color: #f0f0f0;
+}
+
+.form-submit-btn input:hover {
+    background: #4783ec;
+    color: white;
+}
+
+@media(max-width: 600px) {
+    .container {
+        min-width: 200px;
+    }
+
+    .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+
+    .gender-category {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .donor-category {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info {
+        max-height: 300px;
+        overflow: auto;
+    }
+
+    .main-user-info ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+
+
+
+}

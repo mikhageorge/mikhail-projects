@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('registerpage.jpg');
+    background-size: cover;
+}
+
+
+.infobox {
+    width: 100%;
+    max-width: 1000px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #4783ec;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 0 28px;
+}
+
+.infobox h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.infobox .input-box {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #4783ec;
+    border-radius: 48px;
+    font-size: 16px;
+    color: #4783ec;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input[type="text"]:focus {
+    background-color: white;
+}
+
+.clinic-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    color: #4783ec;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+    align-items: flex-start;
+    /* Align items at the top */
+}
+
+.input-container {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+}
+
+
+
+#map-container {
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 350px;
+}
+
+
+.input-box input::placeholder {
+    color: #4783ec;
+}
+
+.input-box label {
+    font-size: 20px;
+}
+
+.user-input-upload label {
+    font-size: 20px;
+}
+
+
+.form-submit-btn {
+    margin-top: 40px;
+    border-radius: 48px;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 48px;
+    color: #4783ec;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.form-submit-btn input:hover {
+    background: #4783ec;
+    color: white;
+}
+
+
+.infobox .input-box hr {
+    border: 1px solid #4783ec;
+    margin-top: 20px;
+
+}
+
+.infobox .input-box p {
+    color: #4783ec;
+
+}

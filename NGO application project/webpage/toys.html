@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toys Donations</title>
+  <link rel="stylesheet" href="css/schoolSupplies.css">
+</head>
+
+<body>
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+    <a href="aboutdonor.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+          <a href="allservices.html">All services</a>
+          <a href="services.html">Categories</a>
+      </div>
+    </div>
+    <a href="organizations.html">Organizations</a>
+    <a href="enteriddelivery.html">Track your order</a>
+    <a id="prof"href="userprofile.html">My profile</a>
+</div>
+
+
+  <header>
+    <h1>Toys Donations</h1>
+  </header>
+
+
+  <div class="filter-by">
+    <span class="filter-label">Filter:</span>
+    <div class="filter-option">
+      <span>Age:</span>
+      <select id="ageFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select age</option>
+        <option value="kids">Kids</option>
+        <option value="teens">Teens</option>
+        <option value="adults">Adults</option>
+      </select>
+    </div>
+    <div class="filter-option">
+      <span>Gender:</span>
+      <select id="genderFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="unisex">Unisex</option>
+      </select>
+    </div>
+    <div class="filter-option">
+      <span>Category:</span>
+      <select id="categoryFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select Category</option>
+        <option value="board games">Board games</option>
+        <option value=" stuffed toys"> Stuffed toys</option>
+        <option value="dolls">Dolls</option>
+        <option value="sports">Sports</option>
+        <option value="cars"> Cars</option>
+        <option value="outdoor">Outdoor</option>
+      </select>
+    </div>
+    <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+  </div>
+  
+  
+  <main>
+
+<a href="donationselection.html" class="donation-link" age="adults" gender="unisex" category="board games">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Monopoly</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Local Community Center</p>
+        <div class="about-container">
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+      </section>
+    </a>
+
+
+<a href="donationselection.html" class="donation-link" age="adults" gender="unisex" category="board games">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Chess Set</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Local Senior Center</p>
+      <div class="about-container">
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+    </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" age="kids" gender="female" category="stuffed toys">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Plush Bunny</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Children's Home</p>
+      <div class="about-container">
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+    </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" age="teens" gender="male" category="dolls">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Action Figure</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Children's Shelter</p>
+      <div class="about-container">
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+    </section>
+  </a>
+
+<a href="donationselection.html" class="donation-link" age="kids" gender="male" category="stuffed toys">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Teddy Bear</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Local Orphanage</p>
+      <div class="about-container">
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+    </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" age="teens" gender="female" category="dolls">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Barbie Doll</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Children's Hospital</p>
+      <div class="about-container">
+
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+    </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" age="adults" gender="unisex" category="sports">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Football</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Local Sports Club</p>
+      <div class="about-container">
+
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+    </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" age="kids" gender="male" category="cars">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Toy Car Set</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Children's Shelter</p>
+      <div class="about-container">
+
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>   
+         <div>
+          <img src="images/bookCover.jpg" class="item-image">
+        </div>
+      </div>
+       </section>
+  </a>
+  
+
+
+  </main>
+
+  <script src="js\toysScript.js"></script>
+
+</body>
+</html>

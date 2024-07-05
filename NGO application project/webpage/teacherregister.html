@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>second step in teacher Registration page</title>
+    <link rel="stylesheet" href="doctoregisterstyle.css">
+
+    <script>
+
+        function validate(event) {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            const fileInput = document.getElementById('document');
+            let fileUploaded = false;
+            let classesPerWeek = document.getElementById('classes_per_week').value;
+            let students = document.getElementById('students').value;
+            let filledFields = 0;
+
+            // Check if any input field is empty
+            for (const input of inputs) {
+                if (input.value.trim() === '') {
+                    alert('Please fill in all fields');
+                    return false;
+                } else {
+                    filledFields++;
+                }
+            }
+
+            // Check if a file has been uploaded
+            if (fileInput.files.length > 0) {
+                fileUploaded = true;
+            }
+
+            if (!fileUploaded) {
+                alert('Please upload a document');
+                return false;
+            }
+
+            // Check if at least one of the fields (classesPerWeek or students) is filled
+            if (filledFields === inputs.length && classesPerWeek.trim() === '' && students.trim() === '') {
+                alert('Please enter the number of classes per week or the number of students');
+                return false;
+            }
+
+            return true;
+        }
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="infobox">
+        <h1 class="form-title">Just one more step..</h1>
+
+        <form onsubmit="return validate(event)" action="successpage.html">
+            <div class="user-input-upload">
+                <label for="document">Please upload documents so that we can verify your qualifications.</label>
+                <input type="file" id="document" name="document" />
+            </div>
+            <div class="input-box">
+                <label for="grade">Which Grade ?</label>
+                <p>foe example: if you teach grade 9 and 10 , your answer should be grades 9/10</p>
+                <input type="text" id="grade" name="grade" placeholder="Enter the grades you teach" />
+            </div>
+            <div class="input-box">
+                <label for="subjects">Which Subjects ?</label>
+                <p>for example: if you teach math and physics , your anser should be math/physics </p>
+                <input type="text" id="subjects" name="subjects" placeholder="Enter the subjects you teach" />
+            </div>
+            <div class="input-box">
+                <label for="classes_per_week">How Many Classes per Week ?</label>
+                <input type="text" id="classes_per_week" name="classes_per_week"
+                    placeholder="Enter the number of classes you can take per week" />
+            </div>
+            <div class="input-box">
+                <label for="students">How Many Students ?</label>
+                <input type="text" id="students" name="students"
+                    placeholder="Enter the number of students you can teach" />
+            </div>
+            <div class="form-submit-btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>

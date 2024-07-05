@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Supplies Donations</title>
+  <link rel="stylesheet" href="css/schoolSupplies.css">
+</head>
+
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+    <a href="aboutdonor.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+        <a href="allservices.html">All services</a>
+        <a href="services.html">Categories</a>
+      </div>
+    </div>
+    <a href="organizations.html">Organizations</a>
+    <a href="enteriddelivery.html">Track your order</a>
+    <a id="prof" href="userprofile.html">My profile</a>
+  </div>
+
+  <header>
+    <h1>School Supplies Donations</h1>
+
+
+
+  </header>
+  <div class="filter-by">
+    <span class="filter-label">Filter:</span>
+    <div class="filter-option">
+      <select id="filter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select filter</option>
+        <option value="books">books</option>
+        <option value="stationary">stationary </option>
+      </select>
+    </div>
+    <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+  </div>
+  <main>
+    <a href="donationselection.html" class="donation-link" type="stationarry">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Erasers</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Local Community Center</p>
+
+        <div class="about-container">
+          <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <div>
+            <img src="images/bookCover.jpg" class="item-image">
+          </div>
+        </div>
+
+      </section>
+    </a>
+
+
+    <a href="donationselection.html" class="donation-link" type="stationary">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Notebooks</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+
+        <p class="item-organization">City Library</p>
+
+        <div class="about-container">
+          <p class="item-about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="image-container">
+            <img src="images/bookCover.jpg" class="item-image">
+          </div>
+        </div>
+        <br>
+
+      </section>
+
+    </a>
+
+    <a href="donationselection.html" class="donation-link" type="stationary">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Pens</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <div class="about-container">
+          <p class="item-about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="image-container">
+            <img src="images/bookCover.jpg" class="item-image">
+          </div>
+        </div>
+        <br>
+      </section>
+    </a>
+
+    <a href="donationselection.html" class="donation-link" type="books">
+      <section class="donation-item">
+
+        <div>
+          <h2 class="item-title">Art books</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Community Arts Center</p>
+        <div class="about-container">
+          <p class="item-about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="image-container">
+            <img src="images/bookCover.jpg" class="item-image">
+          </div>
+        </div>
+        <br>
+      </section>
+    </a>
+
+    <a href="donationselection.html" class="donation-link" type="stationary">
+      <section class="donation-item">
+
+        <div>
+          <h2 class="item-title">Paper</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Local Elementary School</p>
+        <div class="about-container">
+          <p class="item-about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="image-container">
+            <img src="images/bookCover.jpg" class="item-image">
+          </div>
+        </div>
+
+      </section>
+    </a>
+
+    <a href="donationselection.html" class="donation-link" type="books">
+      <section class="donation-item">
+        <div>
+
+          <h2 class="item-title">Music Books</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Community Music School</p>
+        <div class="about-container">
+          <p class="item-about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="image-container">
+            <img src="images/bookCover.jpg" class="item-image">
+          </div>
+        </div>
+        <br>
+      </section>
+    </a>
+  </main>
+
+
+  <!-- <footer class="dark-footer" id="contact">
+
+    <div class="container">
+      <div class="additional-info">
+        <h2>Know our founders</h2>
+        <p>Ahmed Mohamed</p>
+        <p>Marly Maged</p>
+        <p>Mikhail George</p>
+        <p>Moaaz Samir</p>
+        <p>Mohamed Tamer</p>
+        <p>Sandy George</p>
+      </div>
+      <div class="hq-info">
+        <h2>Headquarters</h2>
+        <p>C4, C Building, GUC</p>
+        <p>Cairo, Egypt</p>
+      </div>
+      <div class="contact-info">
+        <h2 style="color: white;">Contact Us</h2>
+        <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+    </div>
+    <p>&copy; 2024 School Supplies Donation App</p>
+  </footer> -->
+  <script src="js\schoolSuppliesScript.js"></script>
+
+</body>
+
+</html>

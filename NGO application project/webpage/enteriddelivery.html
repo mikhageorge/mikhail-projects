@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>enteridpage</title>
+    <link rel="stylesheet" href="enteriddelivery.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <script>
+        function proceed() {
+            var orderId = document.getElementById("order-id").value;
+            if (orderId === "12345") {
+                window.location.href = "trackorderpage.html";
+            } else {
+                alert("This order ID is wrong or doesn't exist.");
+            }
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="images/together.png" alt="Logo">
+        <a id="tog">TOGETHER</a>
+        <a href="donorhomepage.html">Home</a>
+        <a href="aboutdonor.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="allservices.html">All services</a>
+                <a href="services.html">Categories</a>
+            </div>
+        </div>
+        <a href="organizations.html">Organizations</a>
+        <a href="enteriddelivery.html" class="active">Track your order</a>
+        <a id="prof" href="userprofile.html">My profile</a>
+    </div>
+
+    <div class="maincontainer">
+        <div class="track-order-container">
+            <h2>Track your order</h2>
+            <p>Please enter your order ID</p>
+            <input type="text" id="order-id" placeholder="Enter order ID">
+            <button onclick="proceed()">Proceed</button>
+        </div>
+    </div>
+
+
+
+    <!-- <footer class="dark-footer" id="contact">
+        <div class="container">
+            <div class="additional-info">
+                <h2>Know our founders</h2>
+                <p>Ahmed Mohamed</p>
+                <p>Marly Maged</p>
+                <p>Mikhail George</p>
+                <p>Moaaz Samir</p>
+                <p>Mohamed Tamer</p>
+                <p>Sandy George</p>
+            </div>
+            <div class="hq-info">
+                <h2>Headquarters</h2>
+                <p>C4, C Building, GUC</p>
+                <p>Cairo, Egypt</p>
+            </div>
+            <div class="contact-info">
+                <h2 style="color: white;">Contact Us</h2>
+                <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </div> -->
+    </footer>
+</body>

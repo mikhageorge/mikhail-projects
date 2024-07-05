@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>checkout page</title>
+    <link rel="stylesheet" href="indexstylecheckout.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="together.png" alt="Logo">
+        <a id="tog">TOGETHER</a>
+        <a href="donorhomepage.html">Home</a>
+        <a href="aboutdonor.html">About</a>
+        <div class="dropdown" class="active">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="allservices.html">All services</a>
+                <a href="services.html">Categories</a>
+            </div>
+        </div>
+        <a href="organizations.html">Organizations</a>
+        <a href="enteriddelivery.html">Track your order</a>
+        <a id="prof" href="userprofile.html">My profile</a>
+    </div>
+
+
+    <div class="main-container">
+        <div class="header">Donation Information</div>
+        <div class="rectangle">
+            <img class="photo" src="images/bookCover.jpg" alt="Photo">
+            <div class="text">
+                <h2>donation object</h2>
+                <p>This is some text describing the object.</p>
+            </div>
+            <div class="qty-text">qty=5</div>
+        </div>
+        <div class="spacer"></div>
+        <div class="black-line"></div>
+        <div class="header">Delivery Information</div>
+        <div class="secondheader">Address:</div>
+        <div class="description">Egypt,Cairo,Guc street,Guc gate 3,C Building,3rd floor </div>
+        <div class="spacer"></div>
+        <div class="secondheader">Transportation type:</div>
+        <div class="description">Choose the transportation means that fits your donation. </div>
+        <div class="description">example : if you are donating a set of 50 pens , then you don't need a car but rather a
+            motorcycle</div>
+        <div class="radio-btn custom-radio-container">
+            <div>
+                <input type="radio" id="motorcycle" name="transportation" value="motorcycle">
+                <label for="motorcycle">
+                    <span class="custom-radio"></span> Motorcycle
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="car" name="transportation" value="car">
+                <label for="car">
+                    <span class="custom-radio"></span> Car
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="truck" name="transportation" value="truck">
+                <label for="truck">
+                    <span class="custom-radio"></span> Truck
+                </label>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="secondheader">Donation pickup date:</div>
+        <input type="date" id="pickup-date" name="pickup-date" min="yyyy-MM-dd">
+        <div class="spacer"></div>
+        <div class="secondheader">Donation pickup time:</div>
+        <select id="pickup-time" name="pickup-time">
+            <option value="8:00">From 8:00 am to 9:00 am</option>
+            <option value="9:00">From 9:00 am to 10:00 am</option>
+            <option value="10:00">From 10:00 am to 11:00 am</option>
+            <option value="11:00">From 11:00 am to 12:00 pm</option>
+        </select>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <button type="button" class="btn" onclick="redirectToAnotherPage()">Submit</button>
+
+
+
+    </div>
+
+    <script>
+        // Get tomorrow's date
+        var tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+
+        // Format tomorrow's date in YYYY-MM-DD format
+        var tomorrowFormatted = tomorrow.toISOString().split('T')[0];
+
+        // Set the min attribute of the pickup-date input
+        document.getElementById("pickup-date").min = tomorrowFormatted;
+    </script>
+
+    <script>
+        function redirectToAnotherPage() {
+            var transportationSelected = false;
+            var dateSelected = document.getElementById("pickup-date").value !== "";
+            var timeSelected = document.getElementById("pickup-time").value !== "";
+
+            var radioButtons = document.getElementsByName("transportation");
+            for (var i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    transportationSelected = true;
+                    break;
+                }
+            }
+
+            if (dateSelected && timeSelected && transportationSelected) {
+                // All required fields are selected, redirect to another page
+                window.location.href = "deliverysuccesspage.html";
+            } else {
+                alert("Please select a date, a time, and one of the transportation options.");
+            }
+        }
+    </script>
+
+
+
+
+
+
+    <!-- <footer class="dark-footer" id="contact">
+        <div class="container">
+            <div class="additional-info">
+                <h2>Know our founders</h2>
+                <p>Ahmed Mohamed</p>
+                <p>Marly Maged</p>
+                <p>Mikhail George</p>
+                <p>Moaaz Samir</p>
+                <p>Mohamed Tamer</p>
+                <p>Sandy George</p>
+            </div>
+            <div class="hq-info">
+                <h2>Headquarters</h2>
+                <p>C4, C Building, GUC</p>
+                <p>Cairo, Egypt</p>
+            </div>
+            <div class="contact-info">
+                <h2 style="color: white;">Contact Us</h2>
+                <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </div>
+    </footer> -->
+</body>

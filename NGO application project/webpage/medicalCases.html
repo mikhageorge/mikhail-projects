@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical cases</title>
+  <link rel="stylesheet" href="css/schoolSupplies.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+    </div>
+
+  <header>
+    <h1>Medical cases</h1>
+  </header>
+
+  <div class="filter-by">
+    <span class="filter-label">Filter:</span>
+    <div class="filter-option">
+      <select id="specialtyFilter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select specialty</option>
+        <option value="Pediatrics">Pediatrics</option>
+        <option value="Surgery">Surgery</option>
+        <option value="Ophthalmology">Ophthalmology</option>
+      </select>
+    </div>
+    <div class="filter-option">
+        <select id="organizationFilter" onchange="filterOrganizations()">
+          <option value="" class="sel">Select organization</option>
+          <option value="57357">57357</option>
+          <option value="Magdi Yacoub">Magdi Yacoub</option>
+          <option value="Kasr el-ainy">Kasr el-ainy</option>
+
+
+        </select>
+    </div>
+    <div class="filter-option">
+        <select id="governorateFilter" onchange="filterOrganizations()">
+          <option value="" class="sel">Select governorate</option>
+          <option value="Giza">Giza</option>
+          <option value="Cairo">Cairo</option>
+        </select>
+    </div>
+    <div class="filter-option">
+        <select id="areaFilter" onchange="filterOrganizations()">
+          <option value="" class="sel">Select area</option>
+          <option value="6th of October">6th of October</option>
+          <option value="Zayed">Zayed</option>
+          <option value="Abaasiya">Abaasiya</option>
+          <option value="Heliopolis">Heliopolis</option>
+
+        </select>
+    </div>
+    <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+  </div>
+  
+  
+  
+  <main>
+    <a href="teachingDetails.html" class="donation-link" specialty="Pediatrics" organization="57357" area="6th of October" governorate="Giza">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Pediatrics</h2>
+        </div>
+        <p class="item-organization"> 57357 </p>
+        <p class="item-about"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+    </a>
+    
+
+    <a href="teachingDetails.html" class="donation-link" specialty="Surgery" organization="Magdi Yacoub" area="Zayed" governorate="Giza">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Surgery</h2>
+        </div>
+        <p class="item-organization"> Magdi Yacoub </p>
+        <p class="item-about"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+    </a>
+
+  <a href="teachingDetails.html" class="donation-link" specialty="Ophthalmology" organization="Kasr el-ainy" area="Abaasiya" governorate="Cairo">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Ophthalmology</h2>
+        </div>
+        <p class="item-organization"> Kasr el-ainy </p>
+        <p class="item-about"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+    </a>
+  
+    <a href="teachingDetails.html" class="donation-link" specialty="Pediatrics" organization="Kasr el-ainy" area="Heliopolis" governorate="Cairo">
+        <section class="donation-item">
+        <div>
+          <h2 class="item-title">Ophthalmology</h2>
+        </div>
+        <p class="item-organization"> Kasr el-ainy </p>
+        <p class="item-about"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+    </a>
+  </main>
+
+  <script src="js\medicalCasesScript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('loginpage.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    width: 150px;
+    /* Adjust width as needed */
+    /* Center the logo horizontally and add margin below */
+    margin-bottom: 0px;
+}
+
+.tagline {
+    color: #1ecd95;
+    /* Adjust color as needed */
+    font-size: 30px;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    /* Adjust font weight as needed */
+    margin-bottom: 40px;
+}
+
+
+.infobox {
+    width: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #4783ec;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.infobox h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.infobox .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #4783ec;
+    border-radius: 48px;
+    font-size: 16px;
+    color: #4783ec;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input ::placeholder {
+    color: #4783ec;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.infobox .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #4783ec;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #4783ec;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.infobox .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 48px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #4783ec;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.infobox .btn:hover {
+    background: #4783ec;
+    color: #fff;
+}
+
+
+.infobox .register-Link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-Link p a {
+    color: #4783ec;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-Link p a:hover {
+    text-decoration: underline;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 48px;
+    color: #4783ec;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.form-submit-btn input:hover {
+    background: #4783ec;
+    color: white;
+}

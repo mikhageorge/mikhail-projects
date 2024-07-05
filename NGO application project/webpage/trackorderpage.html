@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>track order page</title>
+    <link rel="stylesheet" href="trackorderstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="images/together.png" alt="Logo">
+        <a id="tog">TOGETHER</a>
+        <a href="donorhomepage.html">Home</a>
+        <a href="aboutdonor.html">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="allservices.html">All services</a>
+                <a href="services.html">Categories</a>
+            </div>
+        </div>
+        <a href="organizations.html">Organizations</a>
+        <a href="enteriddelivery.html" class="active">Track your order</a>
+        <a id="prof" href="userprofile.html">My profile</a>
+    </div>
+
+    <div class="main-container">
+        <div class="order-details">
+            <div class="header">Order details</div>
+            <div class="secondheader">Delivery man details:</div>
+            <p>Mohamed Ahmed</p>
+            <p>010267979997</p>
+            <div class="spacer"></div>
+            <div class="secondheader">Established time of arrival:</div>
+            <p>Delivery man will arrive after:</p>
+            <div id="countdown"></div>
+            <p>Delivery man is expected to arrive at:</p>
+            <div id="time"></div>
+            <div class="spacer"></div>
+
+        </div>
+        <div class="map-container">
+            <div class="secondheader">Delivery man location:</div>
+            <p>The current location of the delivery man will be displayed on the map below</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55250.70676743134!2d31.2202903374297!3d30.060684917438472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145841fce48984d7%3A0x838b16ca057a8934!2sAramex!5e0!3m2!1sen!2seg!4v1715126034665!5m2!1sen!2seg"
+                width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- 
+
+    <footer class="dark-footer" id="contact">
+        <div class="container">
+            <div class="additional-info">
+                <h2>Know our founders</h2>
+                <p>Ahmed Mohamed</p>
+                <p>Marly Maged</p>
+                <p>Mikhail George</p>
+                <p>Moaaz Samir</p>
+                <p>Mohamed Tamer</p>
+                <p>Sandy George</p>
+            </div>
+            <div class="hq-info">
+                <h2>Headquarters</h2>
+                <p>C4, C Building, GUC</p>
+                <p>Cairo, Egypt</p>
+            </div>
+            <div class="contact-info">
+                <h2 style="color: white;">Contact Us</h2>
+                <p>Email: <a id="email" href="mailto:youremail.co">hello@youremail.co</a></p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </div>
+    </footer> -->
+
+    <script>
+        // Set the countdown time to 10 seconds
+        var countdownTime = 10;
+        function updateCountdown() {
+            var seconds = countdownTime;
+            var formattedSeconds = String(seconds).padStart(2, '0');
+            document.getElementById('countdown').innerText = formattedSeconds;
+            countdownTime--;
+            if (countdownTime < 0) {
+                clearInterval(interval);
+                displayAlert();
+            }
+        }
+        function displayAlert() {
+            alert("The delivery man has arrived!");
+        }
+        var interval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+
+
+    <script>
+        function displayTime() {
+            var now = new Date();
+            now.setSeconds(now.getSeconds() + 30);
+
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+
+            // Add leading zeros if needed
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            // Display the time
+            document.getElementById('time').textContent = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+        }
+        window.onload = displayTime;
+    </script>
+
+
+
+
+
+
+
+</body>

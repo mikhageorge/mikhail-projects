@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Donations</title>
+  <link rel="stylesheet" href="css/schoolSupplies.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <img src="images/together.png" alt="Logo">
+    <a id="tog">TOGETHER</a>
+    <a href="donorhomepage.html">Home</a>
+    <a href="aboutdonor.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+          <a href="allservices.html">All services</a>
+          <a href="services.html">Categories</a>
+      </div>
+    </div>
+    <a href="organizations.html">Organizations</a>
+    <a href="enteriddelivery.html">Track your order</a>
+    <a id="prof"href="userprofile.html">My profile</a>
+</div>
+
+  <header>
+    <h1>Food Donations</h1>
+  </header>
+
+
+<div class="filter-by">
+    <span class="filter-label">Filter:</span>
+    <div class="filter-option">
+      <select id="filter" onchange="filterOrganizations()">
+        <option value="" class="sel">Select filter</option>
+        <option value="fruits and vegetables"> Fruits and vegetables</option>
+        <option value="canned foods"> Canned foods </option>
+        <option value="fresh meals"> Fresh meals </option>
+        <option value="baked goods"> Baked goods </option>
+
+      </select>
+    </div>
+    <button onclick="removeFilters()" id="remButton">Remove Filters</button>
+  </div>
+  <main>
+    <a href="donationselection.html" class="donation-link" type="baked goods">
+      <section class="donation-item">
+        <div>
+          <h2 class="item-title">Bread</h2>
+          <h5 class="quantity">Qt: 5</h5>
+        </div>
+        <p class="item-organization">Local Community Center</p>
+        <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        
+      </section>
+    </a>
+
+<a href="donationselection.html" class="donation-link" type="fruits and vegetables">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Apples</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Local Food Bank</p>
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>   
+     </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" type="canned foods">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Canned Soup</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Homeless Shelter</p>
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" type="fresh meals">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Salad Kits</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Community Kitchen</p>
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" type="baked goods">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Cookies</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Local Soup Kitchen</p>
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      </section>
+  </a>
+  
+  <a href="donationselection.html" class="donation-link" type="fruits and vegetables">
+    <section class="donation-item">
+      <div>
+        <h2 class="item-title">Bananas</h2>
+        <h5 class="quantity">Qt: 5</h5>
+      </div>
+      <p class="item-organization">Local Food Bank</p>
+      <p class="item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>    
+    </section>
+  </a>
+  </main>
+  <script src="js\schoolSuppliesScript.js"></script>
+
+</body>
+</html>
