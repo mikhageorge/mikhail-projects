@@ -1,3 +1,8 @@
+Chess game engine
+• the chess game included functions to initialize a chess board, visualize the chess board, move a piece according
+to its movement rules, and suggest possible legal moves for any piece on the board.
+• The project was implemented using Haskell
+
 Labs scheduling system :
 • A system was developed to allocate weekly lab sessions of a course to available TAs. Each lab was assigned
 precisely one TA, and each TA had a specified teaching load, representing the number of labs they needed to
