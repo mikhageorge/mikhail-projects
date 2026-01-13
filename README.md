@@ -11,7 +11,7 @@ can be divided into installments.
 • a full schema was made in milestone 1 of this project , the database engine was implemented in milestone 2
 using SQL . a front-end was implemented in milestone 3 using ASP.NET forms.
 
-A donation application for NGO
+A donation application for NGO :
 • In milestone 1 , we were asked to write 150 consistent and complete functional and non-functional user stories
 to cover the functionalities that should be provided by the application .
 • In milestone 2 , A complete front-end was implemented for the application but with user stories provided to us
