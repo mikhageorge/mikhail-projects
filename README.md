@@ -24,3 +24,12 @@ to manage system processes. It includes creating an interpreter to read and exec
 implementing memory management to store processes, and using mutexes to ensure mutual exclusion over
 critical resources.
 • The project was implemented using C
+
+Von Neumann architecture simulation :
+• The project simulates a fictional processor design and architecture called "Fillet-O-Neumann with moves on the
+side,"based on the Von Neumann design where data and instructions share the same memory. It supports three
+instruction formats: R-type for register-to-register operations (arithmetic and logical), I-type for operations
+with immediate values (loading, storing, branching, and immediate arithmetic/logical), and J-type for jump
+instructions. The code implements the RISC pipeline logic through five stages: Fetch, Decode, Execute, Memory
+Access, and Write-back, with stage logic varying based on the instruction type.
+• The project was implemented using C
