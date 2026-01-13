@@ -1,3 +1,18 @@
+Labs scheduling system :
+• A system was developed to allocate weekly lab sessions of a course to available TAs. Each lab was assigned
+precisely one TA, and each TA had a specified teaching load, representing the number of labs they needed to
+teach per week. The system ensured that no TA was assigned more labs than their teaching load, though they
+could be assigned fewer. Additionally, the system restricted the number of slots assigned to each TA per day
+to a specified limit.
+• The project was implemented using Prolog
+
+A donation application for NGO :
+• In milestone 1 , we were asked to write 150 consistent and complete functional and non-functional user stories
+to cover the functionalities that should be provided by the application .
+• In milestone 2 , A complete front-end was implemented for the application but with user stories provided to us
+by the course instructor .
+• Milestone 2 was implemented using CSS , HTML5 and JavaScript .
+
 Database and web application for a student advising system : 
 • The implemented database system accommodates Admins, Advisors, and Advising Students, each with specific
 roles and permissions. Admins modify system information and handle requests. Advisors create and edit
@@ -11,13 +26,6 @@ can be divided into installments.
 • a full schema was made in milestone 1 of this project , the database engine was implemented in milestone 2
 using SQL . a front-end was implemented in milestone 3 using ASP.NET forms.
 
-A donation application for NGO :
-• In milestone 1 , we were asked to write 150 consistent and complete functional and non-functional user stories
-to cover the functionalities that should be provided by the application .
-• In milestone 2 , A complete front-end was implemented for the application but with user stories provided to us
-by the course instructor .
-• Milestone 2 was implemented using CSS , HTML5 and JavaScript .
-
 Von Neumann architecture simulation :
 • The project simulates a fictional processor design and architecture called "Fillet-O-Neumann with moves on the
 side,"based on the Von Neumann design where data and instructions share the same memory. It supports three
@@ -26,14 +34,6 @@ with immediate values (loading, storing, branching, and immediate arithmetic/log
 instructions. The code implements the RISC pipeline logic through five stages: Fetch, Decode, Execute, Memory
 Access, and Write-back, with stage logic varying based on the instruction type.
 • The project was implemented using C
-
-Labs scheduling system :
-• A system was developed to allocate weekly lab sessions of a course to available TAs. Each lab was assigned
-precisely one TA, and each TA had a specified teaching load, representing the number of labs they needed to
-teach per week. The system ensured that no TA was assigned more labs than their teaching load, though they
-could be assigned fewer. Additionally, the system restricted the number of slots assigned to each TA per day
-to a specified limit.
-• The project was implemented using Prolog
 
 The last of us game
 • Implemented a single player game for survival in a world filled with zombies using OOP concepts. the player
