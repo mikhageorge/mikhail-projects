@@ -33,3 +33,11 @@ with immediate values (loading, storing, branching, and immediate arithmetic/log
 instructions. The code implements the RISC pipeline logic through five stages: Fetch, Decode, Execute, Memory
 Access, and Write-back, with stage logic varying based on the instruction type.
 • The project was implemented using C
+
+Labs scheduling system :
+• A system was developed to allocate weekly lab sessions of a course to available TAs. Each lab was assigned
+precisely one TA, and each TA had a specified teaching load, representing the number of labs they needed to
+teach per week. The system ensured that no TA was assigned more labs than their teaching load, though they
+could be assigned fewer. Additionally, the system restricted the number of slots assigned to each TA per day
+to a specified limit.
+• The project was implemented using Prolog
