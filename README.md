@@ -17,3 +17,10 @@ to cover the functionalities that should be provided by the application .
 • In milestone 2 , A complete front-end was implemented for the application but with user stories provided to us
 by the course instructor .
 • Milestone 2 was implemented using CSS , HTML5 and JavaScript .
+
+Operating system simulation :
+• The project code simulates an operating system by implementing the round robin (RR) scheduling algorithm
+to manage system processes. It includes creating an interpreter to read and execute code from text files,
+implementing memory management to store processes, and using mutexes to ensure mutual exclusion over
+critical resources.
+• The project was implemented using C
