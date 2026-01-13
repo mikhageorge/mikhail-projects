@@ -18,13 +18,6 @@ to cover the functionalities that should be provided by the application .
 by the course instructor .
 • Milestone 2 was implemented using CSS , HTML5 and JavaScript .
 
-Operating system simulation :
-• The project code simulates an operating system by implementing the round robin (RR) scheduling algorithm
-to manage system processes. It includes creating an interpreter to read and execute code from text files,
-implementing memory management to store processes, and using mutexes to ensure mutual exclusion over
-critical resources.
-• The project was implemented using C
-
 Von Neumann architecture simulation :
 • The project simulates a fictional processor design and architecture called "Fillet-O-Neumann with moves on the
 side,"based on the Von Neumann design where data and instructions share the same memory. It supports three
@@ -41,3 +34,20 @@ teach per week. The system ensured that no TA was assigned more labs than their 
 could be assigned fewer. Additionally, the system restricted the number of slots assigned to each TA per day
 to a specified limit.
 • The project was implemented using Prolog
+
+The last of us game
+• Implemented a single player game for survival in a world filled with zombies using OOP concepts. the player
+can choose to play with different characters and each character has a special action . players can only move
+within a 15*15 grid and they may find traps on some cells that decrease the player’s health or supplies that
+increase the player’s health or allow the player to use his special action. when the player kills a zombie , another
+one will spawn on the map and the game doesn’t end except when the player collects and uses all vaccines (type
+of supplies ) or when all the heroes are defeated by zombies.
+• The game engine was implemented with java in milestone 1 and 2 of this project . the GUI for the game was
+implemented in milestone 3 using javaFX
+
+Operating system simulation :
+• The project code simulates an operating system by implementing the round robin (RR) scheduling algorithm
+to manage system processes. It includes creating an interpreter to read and execute code from text files,
+implementing memory management to store processes, and using mutexes to ensure mutual exclusion over
+critical resources.
+• The project was implemented using C
