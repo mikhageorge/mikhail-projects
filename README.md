@@ -1,3 +1,26 @@
+Traveling AI assistant
+This project was divided into 3 milestones :
+Milestone 1 :
+• Data Pipeline & Engineering: Aggregated and cleaned hotels, users, and reviews datasets to derive traveler
+insights and engineer a country_group target variable for regional classification.
+• Modeling & Explainability: Developed predictive models (using Logistic Regression and Neural Networks)
+to classify hotel regions, implementing XAI techniques like LIME and SHAP to interpret model decisions and
+feature importance and finally chose the best model for our use case.
+Milestone 2 :
+• Knowledge Graph Architecture: Architected and populated a Neo4j Knowledge Graph to model semantic
+relationships between travelers, hotels, and visa policies, transforming tabular data into a graph structure with
+strict uniqueness constraints.
+• Graph Analytics: Engineered complex Cypher queries to extract demographic insights and implemented
+rule-based logic to quantify hotel performance gaps, specifically identifying properties that statistically "exceed
+expectations".
+Milestone 3 :
+• Hybrid Graph-RAG Pipeline: Engineered an end-to-end Retrieval-Augmented Generation (RAG) system
+merging Neo4j graph traversals with ChromaDB vector search to ground LLM responses in factual hotel and
+visa data.
+• Interactive UI & Explainability: Deployed a Streamlit chat interface featuring intent classification to route
+queries and a "glass-box"debug dashboard to visualize retrieved graph context and monitor system latency.
+
+
 Chess game engine
 • the chess game included functions to initialize a chess board, visualize the chess board, move a piece according
 to its movement rules, and suggest possible legal moves for any piece on the board.
