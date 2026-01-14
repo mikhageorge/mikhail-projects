@@ -1,3 +1,9 @@
+Adversarial Search AI Battle Agent
+• Developed an adversarial AI agent in Java using Minimax and Alpha-Beta pruning algorithms to determine
+optimal game strategies, successfully optimizing search efficiency and maximizing win utility in a turn-based
+battle simulation.
+
+
 Traveling AI assistant
 This project was divided into 3 milestones :
 Milestone 1 :
