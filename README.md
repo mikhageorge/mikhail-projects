@@ -1,8 +1,3 @@
-Adversarial Search AI Battle Agent
-• Developed an adversarial AI agent in Java using Minimax and Alpha-Beta pruning algorithms to determine
-optimal game strategies, successfully optimizing search efficiency and maximizing win utility in a turn-based
-battle simulation.
-
 ACL 3 EVENT TICKETING SCALABLE PLATFORM :
 High-Level System Architecture
 The Event Ticketing Scalable Project is designed as a distributed, cloud-native microservices application developed using Java and Maven. It employs an API Gateway pattern to route external traffic and relies on an event-driven architecture for inter-service communication, ensuring loose coupling and high scalability. The system is divided into five core domain microservices and a central gateway. The API Gateway serves as the single entry point, handling request routing and global security measures like JWT validation. The User Service manages registration, authentication, profiles, activity feeds, and user-specific data such as favorite venues. The Event Service handles the core event catalog, event sessions, capacity tracking, and advanced event searching mechanisms. The Booking Service manages the reservation lifecycle, booking cost estimations, attendance tracking, and user-to-event relationships. The Ticket Service is responsible for ticket generation, ticket scanning validations, and tracking unused or nearby tickets. Finally, the Sales Service processes financial transactions, applies promotional discounts, calculates tier revenue, and handles complex refund strategies.
@@ -16,6 +11,11 @@ Infrastructure, Orchestration & DevOps
 The entire system is fully containerized and orchestrated, designed for seamless cloud deployment. Every microservice includes a Dockerfile for containerization, and the repository features a comprehensive Kubernetes configuration directory for a production-ready cluster architecture. This Kubernetes setup includes Deployments and Services for stateless microservices, alongside StatefulSets and Persistent Volume Claims (PVCs) for all stateful database workloads to ensure data persistence. ConfigMaps and Secrets are also heavily utilized for injecting environment configurations and managing sensitive credentials.
 Observability & Monitoring
 A comprehensive observability stack is deployed within a dedicated monitoring Kubernetes namespace to ensure system health and visibility. Prometheus is deployed to scrape and aggregate system metrics, while Grafana provides extensive data visualization. The repository includes specific, pre-built JSON dashboards for every domain to monitor service health and business metrics effectively. Furthermore, Loki is deployed for centralized log aggregation across the highly distributed system.
+
+Adversarial Search AI Battle Agent :
+• Developed an adversarial AI agent in Java using Minimax and Alpha-Beta pruning algorithms to determine
+optimal game strategies, successfully optimizing search efficiency and maximizing win utility in a turn-based
+battle simulation.
 
 Traveling AI assistant
 This project was divided into 3 milestones :
